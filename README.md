@@ -1,59 +1,130 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
+  <img src="public/assets/images/logo_bengkod.svg" alt="BENGTIX logo" width="240">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+  <h1>BENGTIX</h1>
 
-## About Laravel
+  <p>A friendly and modern event ticketing platform built with Laravel.</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+  <p>
+    <a href="https://github.com/PVegananda/ticketing-laravel-12">
+      <img src="https://img.shields.io/github/stars/PVegananda/ticketing-laravel-12?style=for-the-badge&logo=github" alt="GitHub stars">
+    </a>
+    <a href="https://github.com/PVegananda/ticketing-laravel-12/network/members">
+      <img src="https://img.shields.io/github/forks/PVegananda/ticketing-laravel-12?style=for-the-badge&logo=github" alt="GitHub forks">
+    </a>
+    <a href="https://github.com/PVegananda/ticketing-laravel-12">
+      <img src="https://img.shields.io/github/last-commit/PVegananda/ticketing-laravel-12?style=for-the-badge" alt="Last commit">
+    </a>
+  </p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  <p>
+    <img src="https://img.shields.io/badge/PHP-%5E8.2-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP 8.2">
+    <img src="https://img.shields.io/badge/Laravel-12-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel 12">
+    <img src="https://img.shields.io/badge/Tailwind%20CSS-3.1-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+    <img src="https://img.shields.io/badge/Vite-7-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite">
+  </p>
+</div>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## About BENGTIX
 
-## Learning Laravel
+BENGTIX makes it simple to discover events and book tickets in one place. The
+platform is designed to give event attendees a smooth experience while giving
+administrators the tools they need to manage event categories and ticket data.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## Features
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Browse upcoming events and view event details.
+- Explore ticket options and prices for each event.
+- Create an account, sign in, and manage a profile.
+- Manage event categories through the admin dashboard.
+- Use role-aware authentication and email verification.
+- Enjoy a responsive interface powered by Tailwind CSS and Vite.
 
-## Laravel Sponsors
+## Tech Stack
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- **Backend:** PHP 8.2+ and Laravel 12
+- **Frontend:** Blade, Tailwind CSS, Alpine.js, and Vite
+- **Database:** Any database supported by Laravel, including SQLite and MySQL
+- **Testing:** Pest and PHPUnit
 
-### Premium Partners
+## Getting Started
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Prerequisites
+
+Make sure the following tools are installed:
+
+- PHP 8.2 or newer
+- Composer
+- Node.js and npm
+- A database supported by Laravel
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/PVegananda/ticketing-laravel-12.git
+   cd ticketing-laravel-12
+   ```
+
+2. Install PHP dependencies:
+
+   ```bash
+   composer install
+   ```
+
+3. Create a local `.env` file, configure the database connection, and generate
+   an application key:
+
+   ```bash
+   touch .env
+   php artisan key:generate
+   ```
+
+4. Configure the database connection in `.env`, then run the migrations and
+   seed the sample data:
+
+   ```bash
+   php artisan migrate --seed
+   ```
+
+5. Install frontend dependencies and build the assets:
+
+   ```bash
+   npm install
+   npm run build
+   ```
+
+6. Start the local development server:
+
+   ```bash
+   php artisan serve
+   ```
+
+   For a complete development workflow with the queue, logs, and Vite, use:
+
+   ```bash
+   composer run dev
+   ```
+
+Open [http://localhost:8000](http://localhost:8000) in your browser to visit
+BENGTIX.
+
+## Running Tests
+
+Run the application test suite with:
+
+```bash
+composer test
+```
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Contributions are welcome! If you have an idea, find a bug, or want to improve
+the project, please open an issue or submit a pull request. Before submitting,
+make sure your changes are tested and follow the existing code style.
 
-## Code of Conduct
+## Project Status
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+BENGTIX is an evolving project. Features and documentation will continue to
+improve as the platform grows.
